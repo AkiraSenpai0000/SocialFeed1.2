@@ -310,13 +310,10 @@ overflow: hidden;
     border: 0.5rem solid rgba(0, 0, 0, 0.1);
     object-fit: cover; /* Escalar la imagen para que cubra todo el espacio disponible */
     display: block; /* Para evitar el espacio en blanco adicional debajo de la imagen */
-    border-radius: 50%; /* Establecer bordes circulares */
+    border-radius: 80%; /* Establecer bordes circulares */
     margin: 0 auto; /* Centrar horizontalmente la imagen */
   }
-  .body0 {
-      position: relative;
-      display: inline-block;
-  }
+  
     
     .midiv {
       position: absolute;
@@ -327,7 +324,7 @@ overflow: hidden;
       max-height: 100%;
       z-index: 1;
       border-radius: 50%; /* Para hacer la imagen redonda, ajusta según necesites */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra opcional para destacar la imagen */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra opcional para destacar la imagen */
   }
 
 body {
