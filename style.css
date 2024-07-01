@@ -327,19 +327,3 @@ overflow: hidden;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra opcional para destacar la imagen */
   }
 
-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        #miDiv {
-            text-align: center;
-        }
-
-        #miDiv img {
-            max-width: 100%;
-            height: auto;
-        }
