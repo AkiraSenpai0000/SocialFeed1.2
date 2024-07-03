@@ -1,330 +1,288 @@
-/* author: https://uiverse.io/Praashoo7/quick-fish-43
-Praashoo7 */
-
 body {
-    background-color: #fdfdfd;
-    height: 100vh;
-align-items: center;
-display: flex;
-justify-content: center;
-
-overflow: hidden;
+  background-color: #fdfdfd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-  }
-  
-  .up {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-  }
-  
-  .down {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-  }
-  
-  .card1 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 90px 5px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .instagram {
-    margin-top: 1.5em;
-    margin-left: 1.2em;
-    fill: #cc39a4;
-  }
-  
-  .card2 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 90px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .twitter {
-    margin-top: 1.5em;
-    margin-left: -.9em;
-    fill: #03A9F4;
-  }
-  
-  .card3 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 5px 90px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .github {
-    margin-top: -.6em;
-    margin-left: 1.2em;
-  }
-  
-  .card4 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 90px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .fcebook {
-    margin-top: -.9em;
-    margin-left: -1.2em;
-    fill: #8c9eff;
-  }
-  
-  .card1:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #cc39a4;
-  }
-  
-  .card1:hover .instagram {
-    fill: white;
-  }
-  
-  .card2:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #03A9F4;
-  }
-  
-  .card2:hover .twitter {
-    fill: white;
-  }
-  
-  .card3:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: black;
-  }
-  
-  .card3:hover .github {
-    fill: white;
-  }
-  
-  .card4:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #8c9eff;
-  }
-  
-  .card4:hover .facebook {
-    fill: white;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
 
-  .emir_img {
-    width: 100%; /* Ancho del div */
-    max-width: 400px; /* Ancho máximo del div */
-    height: 200px; /* Altura del div */
-    padding: 10px; /* Espacio interno del div */
-    text-align: center; /* Alineación centrada del contenido */
-    margin: 0 auto; /* Centrar horizontalmente el div */
-  }
-  
-  .emir_img img {
-    width: 14rem; /* Ancho de la imagen */
-    height: 14rem; /* Altura de la imagen */
-    border: 0.5rem solid rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Escalar la imagen para que cubra todo el espacio disponible */
-    display: block; /* Para evitar el espacio en blanco adicional debajo de la imagen */
-    border-radius: 50%; /* Establecer bordes circulares */
-    margin: 0 auto; /* Centrar horizontalmente la imagen */
-  }
-  
-  .u-section-1 {
-    background-image: none;
-  }
-  
+.up, .down {
+  display: flex;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter {
+  fill: #111a25;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  fill: black;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook {
+  fill: #3251ff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #3251ff;
+}
+
+.card4:hover .facebook {
+  fill: white;
+}
+
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 328px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 119px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px 60px;
+}
+
+.u-section-1 .u-social-icons-1 {
+  height: 61px;
+  min-height: 16px;
+  width: 292px;
+  min-width: 112px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-icon-1 {
+  height: 100%;
+}
+
+.u-section-1 .u-icon-2 {
+  height: 100%;
+}
+
+.u-section-1 .u-icon-3 {
+  height: 61px;
+}
+
+.u-section-1 .u-icon-4 {
+  color: rgb(0, 137, 203) !important;
+}
+
+@media (max-width: 1199px) {
   .u-section-1 .u-layout-wrap-1 {
-    margin: 0 auto 0 0;
-  }
-  
-  .u-section-1 .u-layout-cell-1 {
-    min-height: 328px;
-  }
-  
-  .u-section-1 .u-container-layout-1 {
-    padding: 30px;
-  }
-  
-  .u-section-1 .u-text-1 {
-    margin: 0;
-  }
-  
-  .u-section-1 .u-text-2 {
-    margin: 20px 0 0;
-  }
-  
-  .u-section-1 .u-layout-cell-2 {
-    min-height: 119px;
-  }
-  
-  .u-section-1 .u-container-layout-2 {
-    padding: 30px 60px;
-  }
-  
-  .u-section-1 .u-social-icons-1 {
-    height: 61px;
-    min-height: 16px;
-    width: 292px;
-    min-width: 112px;
-    white-space: nowrap;
-    margin: 0 auto;
-  }
-  
-  .u-section-1 .u-icon-1 {
-    height: 100%;
-  }
-  
-  .u-section-1 .u-icon-2 {
-    height: 100%;
-  }
-  
-  .u-section-1 .u-icon-3 {
-    height: 61px;
-  }
-  
-  .u-section-1 .u-icon-4 {
-    color: rgb(0, 137, 203) !important;
-  }
-  
-  @media (max-width: 1199px) {
-    .u-section-1 .u-layout-wrap-1 {
       margin-right: initial;
       margin-left: initial;
-    }
-  
-    .u-section-1 .u-layout-cell-1 {
-      min-height: 437px;
-    }
-  
-    .u-section-1 .u-social-icons-1 {
-      margin-right: -13px;
-    }
   }
-  
-  @media (max-width: 991px) {
-    .u-section-1 .u-text-1 {
+
+  .u-section-1 .u-layout-cell-1 {
+      min-height: 437px;
+  }
+
+  .u-section-1 .u-social-icons-1 {
+      margin-right: -13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
       position: relative;
-    }
-  
-    .u-section-1 .u-container-layout-2 {
+  }
+
+  .u-section-1 .u-container-layout-2 {
       padding-left: 30px;
       padding-right: 30px;
-    }
-  
-    .u-section-1 .u-social-icons-1 {
+  }
+
+  .u-section-1 .u-social-icons-1 {
       height: 47px;
       width: 237px;
       margin-right: auto;
       margin-left: 0;
-    }
   }
-  
-  @media (max-width: 767px) {
-    .u-section-1 .u-container-layout-1 {
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-container-layout-1 {
       padding-left: 10px;
       padding-right: 10px;
-    }
-  
-    .u-section-1 .u-container-layout-2 {
+  }
+
+  .u-section-1 .u-container-layout-2 {
       padding-left: 10px;
       padding-right: 10px;
-    }
-  
-    .u-section-1 .u-social-icons-1 {
+  }
+
+  .u-section-1 .u-social-icons-1 {
       margin-left: auto;
-    }
   }
-  
-  @media (max-width: 575px) {
-     .u-section-1 {
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
       min-height: 873px;
-    }
-  
-    .u-section-1 .u-layout-wrap-1 {
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
       margin-top: 180px;
       margin-bottom: 60px;
       margin-right: initial;
       margin-left: initial;
-    }
-  
-    .u-section-1 .u-layout-cell-1 {
-      min-height: 328px;
-    }
-  
-    .u-section-1 .u-layout-cell-2 {
-      min-height: 202px;
-    }
-  
-    .u-section-1 .u-social-icons-1 {
-      height: 49px;
-      width: 244px;
-    }
-  
-    .u-section-1 .u-icon-3 {
-      height: 49px;
-    }
-  
-    .u-section-1 .u-icon-4 {
-      height: 49px;
-    }
-  }
-  
-  #miDiv {
-    width: 100%; /* Ancho del div */
-    max-width: 400px; /* Ancho máximo del div */
-    height: 200px; /* Altura del div */
-    padding: 10px; /* Espacio interno del div */
-    text-align: center; /* Alineación centrada del contenido */
-    margin: 0 auto; /* Centrar horizontalmente el div */
-  }
-  
-  #miDiv img {
-    width: 14rem; /* Ancho de la imagen */
-    height: 14rem; /* Altura de la imagen */
-    border: 0.5rem solid rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Escalar la imagen para que cubra todo el espacio disponible */
-    display: block; /* Para evitar el espacio en blanco adicional debajo de la imagen */
-    border-radius: 80%; /* Establecer bordes circulares */
-    margin: 0 auto; /* Centrar horizontalmente la imagen */
-  }
-  
-    
-    .midiv {
-      position: center;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 100%;
-      max-height: 100%;
-      z-index: 1;
-      border-radius: 50%; /* Para hacer la imagen redonda, ajusta según necesites */
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra opcional para destacar la imagen */
   }
 
+  .u-section-1 .u-layout-cell-1 {
+      min-height: 328px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+      min-height: 202px;
+  }
+
+  .u-section-1 .u-social-icons-1 {
+      height: 49px;
+      width: 244px;
+  }
+
+  .u-section-1 .u-icon-3 {
+      height: 49px;
+  }
+
+  .u-section-1 .u-icon-4 {
+      height: 49px;
+  }
+}
+
+#miDiv img {
+  width: 14rem; /* Ancho de la imagen */
+  height: 14rem; /* Altura de la imagen */
+  border: 0.5rem solid rgba(108, 22, 189, 0.1);
+  object-fit: cover; /* Escalar la imagen para que cubra todo el espacio disponible */
+  display: block; /* Para evitar el espacio en blanco adicional debajo de la imagen */
+  border-radius: 50%; /* Establecer bordes circulares */
+  margin: 0 auto; /* Centrar horizontalmente la imagen */
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
